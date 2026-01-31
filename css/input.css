@@ -12,7 +12,7 @@
 
 @layer components {
   body {
-    @apply bg-(--bg) text-(--text) tracking-wider capitalize;
+    @apply bg-(--bg) text-(--text) tracking-wider capitalize overflow-x-hidden;
   }
   .layout {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
@@ -30,19 +30,48 @@
     @apply text-(--primary);
   }
   .btn {
-    @apply text-white bg-(--primary) text-sm py-2 px-4 md:text-lg rounded-xl capitalize cursor-pointer;
+    @apply text-white bg-(--primary) text-sm py-2 px-6 md:text-lg rounded-xl capitalize cursor-pointer transition-all duration-300 shadow-lg shadow-(--primary)/20;
+  }
+
+  /* Desktop Hover Effect */
+  @media (hover: hover) {
+    .btn:hover {
+      @apply brightness-110 -translate-y-0.5 shadow-xl shadow-(--primary)/40;
+    }
+  }
+
+  /* Mobile/All Active Effect */
+  .btn:active {
+    @apply scale-95 brightness-90;
   }
   .card {
-    @apply transform transition-all duration-300;
+    @apply transform transition-all duration-500 border border-slate-800/50;
   }
-  .card:hover {
-    @apply -translate-y-2.5;
+
+  @media (hover: hover) {
+    .card:hover {
+      @apply -translate-y-3 border-(--primary)/50 bg-slate-800/10 shadow-2xl shadow-(--primary)/10;
+    }
   }
   .active__header {
     @apply bg-(--bg) border-b-(--primary) border-b fixed;
   }
   .active__testimonials {
     @apply border-4 border-(--primary);
+  }
+
+  /* Navigation Link Hover */
+  @media (hover: hover) {
+    nav ul li a:hover {
+      @apply text-(--primary) scale-105;
+    }
+  }
+
+  /* Pricing Card Focus */
+  @media (hover: hover) {
+    .pricing-card:hover .pricing-card-inner {
+      @apply shadow-2xl shadow-(--primary)/5;
+    }
   }
   .pricing-card {
     perspective: 1000px;
