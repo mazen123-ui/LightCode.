@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #01051e;
+    --card-bg: #020726;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --primary: #ff7d3b;
+  }
+}
+
+@layer components {
+  body {
+    @apply bg-(--bg) text-(--text) tracking-wider capitalize;
+  }
+  .layout {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .section {
+    @apply py-20;
+  }
+  nav ul li a {
+    @apply transition-all duration-300;
+  }
+  nav ul li a:hover {
+    @apply text-(--primary);
+  }
+  nav ul li a.active {
+    @apply text-(--primary);
+  }
+  .btn {
+    @apply text-white bg-(--primary) text-sm py-2 px-4 md:text-lg rounded-xl capitalize cursor-pointer;
+  }
+  .card {
+    @apply transform transition-all duration-300;
+  }
+  .card:hover {
+    @apply -translate-y-2.5;
+  }
+  .active__header {
+    @apply bg-(--bg) border-b-(--primary) border-b fixed;
+  }
+  .active__testimonials {
+    @apply border-4 border-(--primary);
+  }
+  .pricing-card {
+    perspective: 1000px;
+    @apply h-[450px] w-full;
+  }
+  .pricing-card-inner {
+    @apply relative w-full h-full transition-transform duration-700;
+    transform-style: preserve-3d;
+  }
+  .pricing-card.flipped .pricing-card-inner {
+    transform: rotateY(180deg);
+  }
+  .pricing-card-front,
+  .pricing-card-back {
+    @apply absolute w-full h-full rounded-2xl border border-slate-800 p-8 flex flex-col justify-between bg-(--card-bg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .pricing-card-back {
+    transform: rotateY(180deg);
+  }
+}

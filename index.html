@@ -1,0 +1,682 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Remixicon Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper Js Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Css Link -->
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden">
+    <div
+      class="scroll-btn fixed bottom-5 right-5 bg-(--primary) text-white text-lg py-1 px-2 rounded w-fit cursor-pointer z-50 hidden"
+    >
+      <i class="ri-arrow-up-line"></i>
+    </div>
+    <header class="fixed top-0 left-0 right-0 w-full z-50">
+      <nav class="layout flex justify-between items-center py-3 md:py-5">
+        <p class="logo font-bold text-2xl">
+          Light<span class="text-(--primary)">Code</span>
+        </p>
+        <ul
+          class="fixed md:static top-0 left-0 w-full h-screen md:h-auto md:w-auto flex flex-col md:flex-row items-center justify-center gap-6 bg-[#0d112b] md:bg-transparent transform -translate-y-full md:translate-y-0 transition-transform duration-500 ease-in-out"
+        >
+          <li class="py-2 md:py-0">
+            <a href="#" class="font-semibold">home</a>
+          </li>
+          <li class="py-2 md:py-0">
+            <a href="#features" class="font-semibold">features</a>
+          </li>
+          <li class="py-2 md:py-0">
+            <a href="#testimonials" class="font-semibold">testimonials</a>
+          </li>
+          <li class="py-2 md:py-0">
+            <a href="#pricing" class="font-semibold">pricing</a>
+          </li>
+          <li class="py-2 md:py-0">
+            <a href="#contact" class="font-semibold">contact</a>
+          </li>
+        </ul>
+        <div class="menu-btn text-3xl cursor-pointer md:hidden z-50">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="section">
+        <div
+          class="absolute top-0 left-0 w-60 h-60 rounded-full bg-fuchsia-700 blur-3xl opacity-70 -z-50"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-60 h-60 rounded-full bg-(--primary) blur-3xl opacity-70 -z-50"
+        ></div>
+        <div
+          class="layout grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center"
+        >
+          <div class="home__content">
+            <h1 class="text-3xl md:text-4xl font-bold">
+              Awesome App for Your Financial.
+            </h1>
+            <p class="my-4 text-(--muted) text-sm">
+              This should be used to tell a story and let your users know a
+              little more about app and it’s use, How can benefit them.
+            </p>
+            <button class="btn">download app</button>
+          </div>
+          <div class="home__image">
+            <img src="img/hero4.png" alt="img" />
+          </div>
+        </div>
+      </section>
+      <section id="features" class="section bg-(--card-bg)">
+        <div class="text-center">
+          <p class="text-(--primary) text-sm font-bold">our features</p>
+          <h2 class="text-2xl md:text-3xl font-bold">
+            It's Easier Now To Manage Your All Payments <br />
+            By Our App
+          </h2>
+        </div>
+        <div
+          class="layout text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20"
+        >
+          <div
+            class="card features__card bg-(--card-bg) p-5 border rounded-2xl"
+          >
+            <i
+              class="ri-calendar-line text-4xl bg-(--primary) p-2 rounded-xl"
+            ></i>
+            <h3 class="text-xl font-bold my-4">Track Your Spending</h3>
+            <p class="text-(--muted) text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </p>
+          </div>
+          <div class="card features__card bg-(--bg) p-5 border rounded-2xl">
+            <i class="ri-phone-line text-4xl bg-(--primary) p-2 rounded-xl"></i>
+            <h3 class="text-xl font-bold my-4">Support 24/24</h3>
+            <p class="text-(--muted) text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </p>
+          </div>
+          <div
+            class="card features__card bg-(--card-bg) p-5 border rounded-2xl"
+          >
+            <i
+              class="ri-pie-chart-line text-4xl bg-(--primary) p-2 rounded-xl"
+            ></i>
+            <h3 class="text-xl font-bold my-4">Finance Snapshot</h3>
+            <p class="text-(--muted) text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section relative">
+        <div
+          class="absolute top-0 left-0 w-60 h-60 rounded-full bg-fuchsia-700 blur-3xl opacity-70 -z-50"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-60 h-60 rounded-full bg-(--primary) blur-3xl opacity-70 -z-50"
+        ></div>
+        <div
+          class="layout grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center"
+        >
+          <div class="about__image">
+            <img src="img/hero3.png" alt="img" />
+          </div>
+          <div class="about__content">
+            <p class="text-(--primary) text-sm font-bold">about us</p>
+            <h2 class="text-2xl md:text-3xl font-bold">
+              Best Financing App To Save Your Money
+            </h2>
+            <p class="my-4 text-(--muted) text-sm">
+              Best financing app ever in the world. Easy to use and very user
+              friendly for mobile banking. You can control your card easily and
+              send money some one just one click.
+            </p>
+            <button class="btn">read more</button>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" class="section bg-(--card-bg)">
+        <div class="text-center">
+          <p class="text-(--primary) text-sm font-bold">how it works</p>
+          <h2 class="text-2xl md:text-3xl font-bold">
+            grow up your money saving
+          </h2>
+        </div>
+        <div
+          class="layout text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20"
+        >
+          <div class="card">
+            <div
+              class="text-white bg-(--bg) p-4 rounded-xl text-5xl w-fit mx-auto"
+            >
+              1
+            </div>
+            <h3 class="text-2xl my-3">install the app</h3>
+            <p class="text-(--muted) text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Sapiente, minus!
+            </p>
+          </div>
+          <div class="card">
+            <div
+              class="text-white bg-(--primary) p-4 rounded-xl text-5xl w-fit mx-auto"
+            >
+              2
+            </div>
+            <h3 class="text-2xl my-3">setup your account</h3>
+            <p class="text-(--muted) text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Sapiente, minus!
+            </p>
+          </div>
+          <div class="card">
+            <div
+              class="text-white bg-(--bg) p-4 rounded-xl text-5xl w-fit mx-auto"
+            >
+              3
+            </div>
+            <h3 class="text-2xl my-3">enjoy the features!</h3>
+            <p class="text-(--muted) text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Sapiente, minus!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="section">
+        <div class="text-center">
+          <p class="text-(--primary) text-sm font-bold">testimonials</p>
+          <h2 class="text-2xl md:text-3xl font-bold">
+            what our clients say about our app
+          </h2>
+        </div>
+        <div class="layout text-center">
+          <div
+            id="testimonials-imgs"
+            class="flex justify-center items-center gap-3 md:gap-5 my-10"
+          >
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden cursor-pointer"
+            >
+              <img src="img/user1.jpg" alt="img" />
+            </div>
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden cursor-pointer"
+            >
+              <img src="img/user2.jpg" alt="img" />
+            </div>
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden cursor-pointer"
+            >
+              <img src="img/user3.jpg" alt="img" />
+            </div>
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden cursor-pointer"
+            >
+              <img src="img/user4.jpg" alt="img" />
+            </div>
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden cursor-pointer"
+            >
+              <img src="img/user5.jpg" alt="img" />
+            </div>
+          </div>
+          <div class="testimonials__card">
+            <p id="testimonials-text" class="text-xl md:text-2xl mb-4"></p>
+            <p
+              id="testimonials-name"
+              class="text-lg text-(--primary) font-bold"
+            ></p>
+            <p id="testimonials-role" class="text-xl md:text-2xl"></p>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="section bg-(--card-bg)">
+        <div class="text-center">
+          <p class="text-(--primary) text-sm font-bold">pricing</p>
+          <h2 class="text-2xl md:text-3xl font-bold">
+            Choose Your Best Plan for Your Business
+          </h2>
+        </div>
+        <div
+          class="switching flex gap-3 justify-center items-center text-xl my-10"
+        >
+          <p>monthly bill</p>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="pricing-toggle" class="sr-only peer" />
+            <div
+              class="w-12 h-6 bg-slate-700 rounded-full peer peer-checked:bg-(--primary) after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-6"
+            ></div>
+          </label>
+          <p>anually bill</p>
+        </div>
+        <div
+          class="layout grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Card 1 -->
+          <div class="pricing-card pricing__card">
+            <div class="pricing-card-inner">
+              <!-- Front (Monthly) -->
+              <div class="pricing-card-front">
+                <div>
+                  <h3 class="text-2xl font-bold mb-2">Basic</h3>
+                  <p class="text-(--muted) text-sm mb-6">For individuals</p>
+                  <div class="text-4xl font-bold mb-6">
+                    $19<span class="text-lg font-normal text-(--muted)"
+                      >/mo</span
+                    >
+                  </div>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>10
+                      Projects
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>5GB
+                      Storage
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>Basic
+                      Support
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn w-full mt-8">Get Started</button>
+              </div>
+              <!-- Back (Annually) -->
+              <div class="pricing-card-back">
+                <div>
+                  <h3 class="text-2xl font-bold mb-2">Basic</h3>
+                  <p class="text-(--muted) text-sm mb-6">For individuals</p>
+                  <div class="text-4xl font-bold mb-6">
+                    $190<span class="text-lg font-normal text-(--muted)"
+                      >/yr</span
+                    >
+                  </div>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>10
+                      Projects
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>50GB
+                      Storage
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>Basic
+                      Support
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>2
+                      Months Free
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn w-full mt-8">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="pricing-card pricing__card">
+            <div class="pricing-card-inner">
+              <!-- Front (Monthly) -->
+              <div class="pricing-card-front border-(--primary)">
+                <div>
+                  <div
+                    class="bg-(--primary) text-white text-xs px-2 py-1 rounded w-fit mb-2"
+                  >
+                    Most Popular
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Professional</h3>
+                  <p class="text-(--muted) text-sm mb-6">For small teams</p>
+                  <div class="text-4xl font-bold mb-6">
+                    $49<span class="text-lg font-normal text-(--muted)"
+                      >/mo</span
+                    >
+                  </div>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Unlimited Projects
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>50GB
+                      Storage
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Priority Support
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Advanced Analytics
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn w-full mt-8">Get Started</button>
+              </div>
+              <!-- Back (Annually) -->
+              <div class="pricing-card-back border-(--primary)">
+                <div>
+                  <div
+                    class="bg-(--primary) text-white text-xs px-2 py-1 rounded w-fit mb-2"
+                  >
+                    Most Popular
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Professional</h3>
+                  <p class="text-(--muted) text-sm mb-6">For small teams</p>
+                  <div class="text-4xl font-bold mb-6">
+                    $490<span class="text-lg font-normal text-(--muted)"
+                      >/yr</span
+                    >
+                  </div>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Unlimited Projects
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>500GB
+                      Storage
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Priority Support
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Advanced Analytics
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>2
+                      Months Free
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn w-full mt-8">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pricing-card pricing__card">
+            <div class="pricing-card-inner">
+              <!-- Front (Monthly) -->
+              <div class="pricing-card-front">
+                <div>
+                  <h3 class="text-2xl font-bold mb-2">Business</h3>
+                  <p class="text-(--muted) text-sm mb-6">
+                    For large enterprises
+                  </p>
+                  <div class="text-4xl font-bold mb-6">
+                    $99<span class="text-lg font-normal text-(--muted)"
+                      >/mo</span
+                    >
+                  </div>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Everything in Pro
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>500GB
+                      Storage
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>24/7
+                      Support
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>Custom
+                      Integration
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn w-full mt-8">Get Started</button>
+              </div>
+              <!-- Back (Annually) -->
+              <div class="pricing-card-back">
+                <div>
+                  <h3 class="text-2xl font-bold mb-2">Business</h3>
+                  <p class="text-(--muted) text-sm mb-6">
+                    For large enterprises
+                  </p>
+                  <div class="text-4xl font-bold mb-6">
+                    $990<span class="text-lg font-normal text-(--muted)"
+                      >/yr</span
+                    >
+                  </div>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i
+                      >Everything in Pro
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>5TB
+                      Storage
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>24/7
+                      Support
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>Custom
+                      Integration
+                    </li>
+                    <li>
+                      <i class="ri-check-line text-(--primary) mr-2"></i>2
+                      Months Free
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn w-full mt-8">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="app" class="section">
+        <div class="layout text-center">
+          <h1 class="text-3xl md:text-4xl font-bold">
+            download the app now and start saving your money
+          </h1>
+          <p class="text-(--muted) my-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+            aliquam pariatur
+          </p>
+          <div class="flex justify-center items-center gap-3">
+            <button class="btn flex justify-center items-center gap-1.5">
+              <i class="ri-google-play-line"></i>google play
+            </button>
+            <button class="btn flex justify-center items-center gap-1.5">
+              <i class="ri-apple-fill"></i>apple store
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section bg-(--card-bg)">
+        <div class="text-center">
+          <p class="text-(--primary) text-sm font-bold">have a question</p>
+          <h2 class="text-2xl md:text-3xl font-bold">get in touch</h2>
+        </div>
+        <div class="layout mt-6 contact__form">
+          <form>
+            <div class="flex justify-center items-center gap-5">
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-1/2 bg-white/60 caret-(--primary) text-black py-2 px-5 rounded outline-hidden"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-1/2 bg-white/60 caret-(--primary) text-black py-2 px-5 rounded outline-hidden"
+              />
+            </div>
+            <div class="flex justify-center items-center gap-5 mt-5">
+              <input
+                type="number"
+                placeholder="Phone"
+                class="w-1/2 bg-white/60 caret-(--primary) text-black py-2 px-5 rounded outline-hidden"
+              />
+              <input
+                type="text"
+                placeholder="Company Name"
+                class="w-1/2 bg-white/60 caret-(--primary) text-black py-2 px-5 rounded outline-hidden"
+              />
+            </div>
+            <textarea
+              placeholder="Messege"
+              cols="30"
+              rows="5"
+              class="w-full bg-white/60 caret-(--primary) text-black py-2 px-5 rounded outline-hidden mt-5"
+            ></textarea>
+            <div class="flex justify-center mt-8">
+              <button class="btn">send messege</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="section py-16 bg-white/5">
+        <div
+          class="layout grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 footer__content"
+        >
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-bold capitalize">about app</h3>
+            <p class="text-white/70">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              temporibus.
+            </p>
+            <div class="flex items-center gap-4 mt-2">
+              <p class="font-semibold capitalize">follow us</p>
+              <ul class="flex items-center gap-3">
+                <li
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-(--primary) text-(--primary) hover:text-white transition-all cursor-pointer"
+                >
+                  <i class="ri-facebook-line"></i>
+                </li>
+                <li
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-(--primary) text-(--primary) hover:text-white transition-all cursor-pointer"
+                >
+                  <i class="ri-instagram-line"></i>
+                </li>
+                <li
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-(--primary) text-(--primary) hover:text-white transition-all cursor-pointer"
+                >
+                  <i class="ri-twitter-line"></i>
+                </li>
+                <li
+                  class="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-(--primary) text-(--primary) hover:text-white transition-all cursor-pointer"
+                >
+                  <i class="ri-tiktok-line"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-bold capitalize">quick links</h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-white/70 hover:text-(--primary) transition-colors capitalize"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white/70 hover:text-(--primary) transition-colors capitalize"
+                  >about</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white/70 hover:text-(--primary) transition-colors capitalize"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white/70 hover:text-(--primary) transition-colors capitalize"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-bold capitalize">help</h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-white/70 hover:text-(--primary) transition-colors capitalize"
+                  >about us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white/70 hover:text-(--primary) transition-colors capitalize"
+                  >terms of use</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white/70 hover:text-(--primary) transition-colors capitalize"
+                  >privacy policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-bold capitalize">newsletter</h3>
+            <p class="text-white/70">
+              subcribe with your email and loads of news will be sent to you
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-full bg-white/60 caret-(--primary) text-black py-2 px-4 rounded-l outline-hidden"
+              />
+              <button
+                class="bg-(--primary) text-white px-4 rounded-r hover:opacity-90 transition-opacity cursor-pointer"
+              >
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="border-t border-white/10 py-8 text-center">
+        <p class="text-white/50 text-sm capitalize">
+          &copy; 2026 <span class="text-(--primary)">LightCode</span>. all
+          rights reserved.
+        </p>
+      </div>
+    </main>
+    <!-- Scroll Reveal Js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Js Link -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
